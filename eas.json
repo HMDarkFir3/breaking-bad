@@ -3,24 +3,24 @@
     "version": ">= 0.57.0"
   },
   "build": {
-    "development": {
-      "distribution": "internal",
-      "android": {
-        "gradleCommand": ":app:assembleDebug"
-      },
-      "ios": {
-        "buildConfiguration": "Debug"
+    "production": {
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production"
       }
     },
-    "preview": {
+    "development": {
+      "channel": "development",
+      "env": {
+        "APP_ENV": "development"
+      },
       "distribution": "internal",
       "android": {
-        "gradleCommand": ":app:assembleRelease",
+        "gradleCommand": ":app:assembleDebug",
         "buildType": "apk",
         "developmentClient": true
       }
-    },
-    "production": {}
+    }
   },
   "submit": {
     "production": {}

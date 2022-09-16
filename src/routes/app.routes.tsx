@@ -5,7 +5,7 @@ import { useTheme } from "styled-components";
 import { Characters } from "../screens/Characters";
 import { Episodes } from "../screens/Episodes";
 
-import Header from "../components/Header";
+import { Header } from "../components/Header";
 
 import { Feather } from "@expo/vector-icons";
 

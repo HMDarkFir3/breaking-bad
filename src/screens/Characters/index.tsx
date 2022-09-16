@@ -39,6 +39,8 @@ export const Characters: FC = () => {
         } else {
           setCharacters((prevState) => [...prevState, ...response.data]);
         }
+
+        setOffset((prevState) => prevState + 10);
       })
       .catch(() => {
         Alert.alert("Don't was possible to show the characters");
@@ -49,8 +51,6 @@ export const Characters: FC = () => {
   }
 
   function handleLoadMore() {
-    setOffset((prevState) => prevState + 10);
-
     offset >= 60 ? setIsLoadingMore(false) : setIsLoadingMore(true);
 
     fetchCharacters();

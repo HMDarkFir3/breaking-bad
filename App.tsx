@@ -8,9 +8,7 @@ import {
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
 import { FC } from "react";
-import { ThemeProvider } from "styled-components/native";
-
-import { AuthProvider } from "./src/contexts/AuthContext";
+import { ThemeProvider, useTheme } from "styled-components/native";
 
 import { Routes } from "./src/routes";
 
@@ -32,10 +30,8 @@ export const App: FC = () => {
 
   return (
     <ThemeProvider theme={dark}>
-      <AuthProvider>
-        <StatusBar />
-        <Routes />
-      </AuthProvider>
+      <StatusBar backgroundColor={dark.colors.background} />
+      <Routes />
     </ThemeProvider>
   );
 };

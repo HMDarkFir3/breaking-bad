@@ -1,12 +1,14 @@
 {
   "expo": {
-    "name": "breaking-bad",
+    "name": "Breaking Bad (LOCAL)",
     "slug": "breaking-bad",
     "scheme": "breaking-bad",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "originalFullName": "@hmdarkfire/breaking-bad",
+    "currentFullName": "@hmdarkfire/breaking-bad",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -23,11 +25,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#171717"
-      },
-      "package": "com.hmdarkfire.breakingbad"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      }
     }
   }
 }

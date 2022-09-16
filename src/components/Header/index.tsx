@@ -1,62 +1,18 @@
-import * as React from "react";
-import { Alert } from "react-native";
+import React, { FC } from "react";
 import { BottomTabHeaderProps } from "@react-navigation/bottom-tabs";
 
-//Hooks
-import { useAuth } from "../../hooks/useAuth";
+import { Container, WelcomeWrapper, UserPhoto, Welcome } from "./styles";
 
-//Styles
-import {
-  Container,
-  Wrapper,
-  UserPhotoWrapper,
-  UserPhoto,
-  WelcomeWrapper,
-  Welcome,
-  Username,
-  LogOutButton,
-  LogOutIcon,
-} from "./styles";
-
-//Interfaces
 interface Props extends BottomTabHeaderProps {}
 
-const Header: React.FC<Props> = (props) => {
-  const { user, logOut } = useAuth();
-
-  function handleLogOut() {
-    Alert.alert("Warning!", "Want to exit the application", [
-      {
-        style: "cancel",
-        text: "No",
-      },
-      {
-        onPress: () => logOut(),
-        text: "Yes",
-      },
-    ]);
-  }
-
+export const Header: React.FC<Props> = () => {
   return (
     <Container>
-      <Wrapper>
-        <UserPhotoWrapper>
-          <UserPhoto source={{ uri: user.photo }} />
-        </UserPhotoWrapper>
+      <WelcomeWrapper>
+        <UserPhoto source={require("../../assets/logo.png")} />
 
-        <WelcomeWrapper>
-          <Welcome>Hello,</Welcome>
-          <Username>
-            {user?.first_name} {user?.last_name}
-          </Username>
-        </WelcomeWrapper>
-      </Wrapper>
-
-      <LogOutButton activeOpacity={0.7} onPress={handleLogOut}>
-        <LogOutIcon name="log-out" />
-      </LogOutButton>
+        <Welcome>Breaking Bad</Welcome>
+      </WelcomeWrapper>
     </Container>
   );
 };
-
-export default Header;
