@@ -17,7 +17,8 @@
 ---
 
 ## 📋 Sobre
-Aplicativo que mostra as informações dos personagens e episódios da série Breaking Bad.
+Aplicativo que mostra as informações dos personagens e episódios da série Breaking Bad. <br>
+Documentação da API utilizada: [Breaking Bad API](https://breakingbadapi.com/)
 
 ---
 
