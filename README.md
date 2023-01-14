@@ -57,6 +57,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org)
 - [React Navigation](https://reactnavigation.org)
 - [Axios](https://github.com/axios/axios)
+- [Styled Components](https://styled-components.com)
 
 ---
 
