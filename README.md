@@ -43,7 +43,6 @@ $ yarn install
 
 # Execute a Aplicação em Desenvolvimento
 $ npx expo start
-
 ```
 
 ---
@@ -56,17 +55,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Expo](https://docs.expo.io)
 - [TypeScript](https://www.typescriptlang.org)
 - [React Navigation](https://reactnavigation.org)
-- [axios](https://github.com/axios/axios)
-- [date-fns](https://date-fns.org)
-- [json-server](https://github.com/typicode/json-server)
-- [expo-notifications](https://docs.expo.io/versions/latest/sdk/notifications/)
-- [expo-status-bar](https://docs.expo.io/guides/configuring-statusbar/#how-is-expo-status-bar-different-from-the-statusbar)
-- [expo-font](https://docs.expo.io/versions/latest/sdk/font/)
-- [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
-- [expo-app-loading](https://docs.expo.io/versions/latest/sdk/app-loading/)
-- [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
-- [react-native-svg](https://github.com/react-native-svg/react-native-svg)
-- [react-native-iphone-x-helper](https://github.com/ptelad/react-native-iphone-x-helper)
+- [Axios](https://github.com/axios/axios)
 
 ---
 
