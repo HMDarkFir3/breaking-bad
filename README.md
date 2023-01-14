@@ -16,7 +16,8 @@
   
 ---
 
-## 📋 Sobre
+## 📋 About
+
 Application that shows the information of the characters and episodes of the Breaking Bad series. <br>
 API documentation used: [Breaking Bad API](https://breakingbadapi.com/)
 
